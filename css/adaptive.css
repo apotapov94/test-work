@@ -1,0 +1,116 @@
+.header_panel-mobile {
+    display: none;
+}
+
+@media(max-width: 1250px){
+    .container {
+        width: 960px;
+    }
+    .header_search input {
+        width: 300px;
+        padding-left: 60px;
+    }
+    .article {
+        flex-direction: column;
+    }
+    .article-text {
+        margin: 0;
+    }
+}
+@media(max-width: 991px){
+    .container {
+        width: 720px;
+    }
+    .header-top {
+        display: none;
+    }
+    .header-bottom {
+        display: none;
+    }
+    .header_panel-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header_search.dev {
+        display: none;
+    }
+    .header_search.mobile {
+        display: block;
+    }
+    .header-middle {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header_search {
+        padding-left: 0;
+    }
+    h1.heading {
+        margin-left: 0;
+    }
+    .breadcrumps {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .article_preview {
+        width: 100%;
+    }
+    .footer_copyright {
+        display: none;
+    }
+}
+@media(max-width: 767px){
+    .container {
+        width: 540px;
+    }
+    .header_info-icons .icon {
+        margin-left: 9px;
+    }
+}
+@media(max-width: 576px){
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+    .header-middle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_contacts {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .header_info-icons {
+        margin-top: 15px;
+    }
+    .header_info-icons .icon {
+        margin: 0 5px;
+    }
+    .header_logo {
+        width: 225px;
+    }
+    .fmain {
+        flex-direction: column;
+    }
+    .footer_menu,.footer_work-time,.footer_contacts {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .footer_info {
+        text-align: center;
+    }
+    .header_mobile-menu {
+        width: 100%;
+    }
+    .hide-mobile {
+        transform: translateX(-100vw);
+    }
+}
+@media(max-width: 450px){
+    .article {
+        width: 100%;
+    }
+    .header_search input {
+        width: auto;
+    }
+}

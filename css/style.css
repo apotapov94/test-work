@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    color: #383838;
+}
+.header-top {
+    border-bottom: 1px solid #bfbfbf;
+    padding: 10px 0;
+}
+.header_menu {
+    font-size: 14px;
+    display: flex;
+    padding: 0;
+}
+.header_menu li {
+    list-style: none;
+    margin-right: 23px;
+    cursor: pointer;
+}
+.header-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.header-middle-wrap {
+    border-bottom: 1px solid #bfbfbf;
+}
+.header_info-icons {
+    display: flex;
+    align-items: flex-end;
+}
+.header_info-icons .icon {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+.header_info-icons .icon span {
+    margin-left: 5px;
+}
+.header_search {
+    padding: 15px;
+    position: relative;
+    font-weight: bold;
+}
+.header_search:before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    top: 27px;
+    z-index: 99;
+    left: 30px;
+    background: url(../img/search.png);
+    position: absolute;
+}
+.header_search input {
+    width: 400px;
+    border-radius: 10px;
+    outline: 0;
+    padding-left: 50px;
+    border: 1px solid #bfbfbf;
+}
+.header_mobile-menu {
+    width: 350px;
+    height: 100vh;
+    background: #d11952;
+    color: #fff;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: transform .4s;
+}
+.hide {
+    display: none;
+}
+.mobile-menu-mask {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    z-index: 998;
+    left: 0;
+    right: 0;
+}
+.header_mobile-menu .header_catalog {
+    flex-direction: column;
+}
+.header_mobile-menu .catalog-item {
+    width: 100%;
+    justify-content: center;
+    border: 0;
+    border-bottom: 1px solid #fff; 
+}
+.header_mobile-menu .catalog-item:first-child {
+    color: #000;
+}
+.header_mobile-menu .catalog-item:last-child {
+    border-right: 0;
+}
+.header_mobile-menu .header_stocks,.header_mobile-menu .header_services {
+    border-right: 0;
+    justify-content: center;
+    height: 54px;
+    background: transparent;
+}
+.header_mobile-menu .header_services {
+    border-bottom: 1px solid #fff;
+}
+.header_mobile-close-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+}
+.header_mobile-menu .header_menu {
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 45px;
+}
+.header_mobile-menu .header_menu li {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.hide-mobile {
+    transform: translateX(-350px);
+}
+.header_search img {
+    position: absolute;
+    right: 30px;
+    top: 27px;
+}
+.header_contacts {
+    text-align: right;
+}
+.header_contacts .phone {
+    font-size: 19px;
+    font-weight: bold;
+}
+.header_contacts .work-hours {
+    font-size: 14px;
+}
+.header-bottom-wrap {
+    border-bottom: 1px solid #bfbfbf;
+}
+.header-bottom {
+    display: flex;
+}
+.header_catalog {
+    display: flex;
+    align-items: center;
+}
+.catalog-item {
+    border-left: 1px solid #bfbfbf;
+    height: 54px;
+    padding: 0 16.4px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.catalog-item:first-child {
+    flex-direction: column;
+    justify-content: center;
+    background: #c1d1d7
+}
+.catalog-item:last-child {
+    border-right: 1px solid #bfbfbf;
+}
+.header_stocks {
+    background: #db055b;
+    color: #fff;
+}
+.header_stocks, .header_services {
+    padding: 0 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    border-right: 1px solid #bfbfbf;
+    cursor: pointer;
+}
+.header_mobile-menu-icon {
+    width: 30px;
+    height: 40px;
+}
+.breadcrumps {
+    display: flex;
+    padding: 0 30px;
+}
+.breadcrumps-wrap {
+    border-bottom: 1px solid #bfbfbf;
+    padding: 10px 0;
+}
+.breadcrumps li {
+    list-style: none;
+    padding-left: 30px;
+    position: relative;
+}
+.breadcrumps li:first-child {
+    padding-left: 0;
+}
+.breadcrumps li:first-child:before {
+    display: none;
+}
+.breadcrumps li:before {
+    content: "";
+    left: 6px;
+    width: 20px;
+    position: absolute;
+    top: 2px;
+    height: 20px;
+    background: url("../img/arrow.png");
+    background-size: 20px;
+}
+
+h1.heading {
+    margin: 50px 0 0 30px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.article {
+    display: flex;
+    width: 48%;
+    margin-bottom: 70px;
+    align-items: flex-start;
+}
+.article_preview {
+    width: 250px;
+}
+.article-text {
+    margin-left: 20px;
+    padding: 15px 0;
+}
+.article_title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: #dfe1e9;
+    padding: 40px 0;
+}
+.fmain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #232327;
+}
+.fmain a {
+    color: #232327;
+    text-decoration: none;
+}
+.footer_contacts {
+    text-align: left;
+    display: flex;
+    line-height: 22px;
+    flex-direction: column;
+}
+.footer_contacts .phone {
+    font-weight: 600;
+}
+.footer_contacts .contacts-link {
+    color: #dc3b7e;
+    text-decoration: underline;
+}
+.footer_work-time {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60px;
+    margin: 0 0 20px 0;
+    padding-left: 0;
+}
+.footer_menu li {
+    list-style: none;
+    text-decoration: underline;
+}
+.footer_info .footer_polit-conf-link {
+    text-decoration: underline;
+}
+.footer_copyright img {
+    margin-bottom: 5px;
+}
+.footer_copyright {
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
