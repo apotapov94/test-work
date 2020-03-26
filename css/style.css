@@ -10,6 +10,9 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+
+/*HEADER START*/
+
 .header {
     color: #383838;
 }
@@ -230,6 +233,13 @@ body {
     background-size: 20px;
 }
 
+/*HEADER END*/
+
+/*CONTENT START*/
+
+.content {
+    min-height: 53.9vh;
+}
 h1.heading {
     margin: 50px 0 0 30px;
 }
@@ -239,6 +249,7 @@ h1.heading {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
+    min-height: 340px;
 }
 .article {
     display: flex;
@@ -257,19 +268,58 @@ h1.heading {
     font-weight: bold;
     font-size: 20px;
 }
+.message-text {
+    margin-top: 15px;
+    display: block;
+}
+.pagination .dev {
+    display: flex;
+}
+.pagination .tab {
+    display: none;
+}
+.pagination .mobile {
+    display: none;
+}
+.tab-dots {
+    display: none;
+}
+.mobile-dots {
+    display: none;
+}
+.pagination {
+    display: flex;
+    margin-left: 43px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.pagination span {
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.page-link {
+    color: #383838;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #bfbfbf;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 40px;
+    margin: 0px 6px;
+    text-decoration: none;
+    display: block;
+}
 
+.page-link.active {
+    background: #db055b;
+    border-color: transparent;
+    color: #fff;
+}
 
+/*CONTENT END*/
 
-
-
-
-
-
-
-
-
-
-
+/*FOOTER START*/
 
 .footer {
     background: #dfe1e9;
@@ -327,3 +377,5 @@ h1.heading {
     align-items: flex-end;
     flex-direction: column;
 }
+
+/*FOOTER END*/
