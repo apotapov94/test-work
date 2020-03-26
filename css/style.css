@@ -30,6 +30,10 @@ body {
     margin-right: 23px;
     cursor: pointer;
 }
+.header_menu li a {
+    color: #383838;
+    text-decoration: none;
+}
 .header-middle {
     display: flex;
     justify-content: space-between;
@@ -147,8 +151,10 @@ body {
     right: 30px;
     top: 27px;
 }
-.header_contacts {
+.header_contacts span {
     text-align: right;
+    color: #383838;
+    text-decoration: none;
 }
 .header_contacts .phone {
     font-size: 19px;
@@ -171,17 +177,21 @@ body {
     border-left: 1px solid #bfbfbf;
     height: 54px;
     padding: 0 16.4px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     text-align: center;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
+.catalog-item a {
+    color: #383838;
+    text-decoration: none;
+}
 .catalog-item:first-child {
     flex-direction: column;
     justify-content: center;
-    background: #c1d1d7
+    background: #c1d1d7;
 }
 .catalog-item:last-child {
     border-right: 1px solid #bfbfbf;
@@ -198,6 +208,15 @@ body {
     font-weight: 700;
     border-right: 1px solid #bfbfbf;
     cursor: pointer;
+
+}
+.header_services a {
+    color: #383838;
+    text-decoration: none; 
+}
+.header_stocks a {
+    color: #fff;
+    text-decoration: none;
 }
 .header_mobile-menu-icon {
     width: 30px;
@@ -343,6 +362,7 @@ h1.heading {
 }
 .footer_contacts .phone {
     font-weight: 600;
+    text-decoration: none;
 }
 .footer_contacts .contacts-link {
     color: #dc3b7e;

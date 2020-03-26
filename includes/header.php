@@ -9,7 +9,7 @@
 	$server = "localhost";
 	$username = "root";
 	$password = "";
-	$dbName = "articles-base";
+	$dbName = "test-work.ru";
     $mysqli = new mysqli($server,$username,$password,$dbName);
     $mysqli->query("SET NAMES 'utf8'");
 
@@ -53,13 +53,13 @@
     <header class="header">
         <div class="header-top">
             <ul class="header_menu container">
-                <li>О компании</li>
-                <li>Доставка</li>
-                <li>Оплата</li>
-                <li>Сервис</li>
-                <li>Возврат</li>
-                <li>Статьи</li>
-                <li>Контакты</li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Сервис</a></li>
+                <li><a href="#">Возврат</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
         </div>
         <div class="header-middle-wrap">
@@ -93,18 +93,18 @@
             <div class="header-bottom container">
                 <div class="header_catalog">
                     <div class="catalog-item">
-                        Продукция
-                        <img src="img/energotech.png" alt="">
+                        <a href="#">Продукция<br>
+                        <img src="img/energotech.png" alt=""></a>
                     </div>
-                    <div class="catalog-item">Стабилизаторы 220В</div>
-                    <div class="catalog-item">Стабилизаторы 380В</div>
-                    <div class="catalog-item">Генераторы 220В</div>
-                    <div class="catalog-item">Генераторы 380В</div>
-                    <div class="catalog-item">ИБП и батареи</div>
-                    <div class="catalog-item">Прочая техника</div>
+                    <div class="catalog-item"><a href="#">Стабилизаторы 220В</a></div>
+                    <div class="catalog-item"><a href="#">Стабилизаторы 380В</a></div>
+                    <div class="catalog-item"><a href="#">Генераторы 220В</a></div>
+                    <div class="catalog-item"><a href="#">Генераторы 380В</a></div>
+                    <div class="catalog-item"><a href="#">ИБП и батареи</a></div>
+                    <div class="catalog-item"><a href="#">Прочая техника</a></div>
                 </div>
-                <div class="header_services">Услуги</div>
-                <div class="header_stocks">Акции</div>
+                <div class="header_services"><a href="#">Услуги</a></div>
+                <div class="header_stocks"><a href="#">Акции</a></div>
             </div>
             <div class="header_panel-mobile container">
                 <form class="header_search mobile" action="#">
